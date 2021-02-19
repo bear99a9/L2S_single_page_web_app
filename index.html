@@ -8,15 +8,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous" />
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Notes</title>
 
   </head>
   <body>
-    <h1>Notes</h1>
+    <header>
+      <h1>Notes</h1>
+    </header>
 
-    <textarea id="note-input" name="name" rows="8" cols="40"></textarea>
-    <button id="create-note" type="button" name="button">Create!</button><br>
+    <div class="note-input">
+      <textarea id="note-input" name="name" rows="8" cols="40"></textarea><br>
+    </div>
+
+    <div class="create-button">
+      <button id="create-note" type="button" name="button">Create!</button><br>
+    </div>
 
     <div id="notes-links">
     <ul id="note-list">

@@ -11,98 +11,46 @@ body{
     font-family: 'Poppins bold', sans-serif;
     min-height: 100vh;
 }
+
 header{
+    min-height: 20vh;
     font-size: 1.5rem;
     font-weight: 1.5rem;
-}
-
-header,form{
-    min-height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items:center ;
-}
-
-form input, form button{
-    padding: 0.5rem;
-    font-size: 2rem;
-    border: none;
-    background: white;
-}
-form button{
-    color: #45afaa;
-    background: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-form button:hover{
-    background: #45afaa;
-    color: white;
-
-}
-
-.message-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.message-list{
-    min-width: 30%;
-    list-style: none;
-}
 
-.message{
-    margin:0.5rem;
-    background: white;
-    color:black;
-    font-size: 1.5rem;
+.note-input {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    transition: all 0.5s ease;
+}
 
-}
-.filter-message{
-    padding:0rem;
-}
-.message li{
-    flex:1;
-}
-.delete-button, .complete-button, .link-button{
-    background:#d6614ce7;
-    color: white;
-    border: none;
+.create-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
-    font-size: 1rem;
-}
-.complete-button{
-    background:rgb(160, 238, 158);
 }
 
-.link-button{
-  background: blue;
+#create-note{
+    padding: 0.75rem;
+    font-size: 16px;
+    border-radius: 50px;
+    color: rgb(230, 126, 94);
+    border: 2px solid rgb(230, 126, 94);
+    cursor: pointer;
+    transition-duration: 0.4s;
 }
 
-.message-item {
-    padding:0rem 0.5rem;
+a#note0{
+    justify-content: center;
+    align-items:center;
 }
 
-.fa-delete,
-.fa-complete
-.fa-link{
-pointer-events: none;
-}
-.completed{
-    text-decoration: line-through;
-    opacity: 0.5;
-}
-.fall{
-    transform: translateY(5rem) rotateZ(20deg);
-    opacity: 0 ;
-}
-
-#main-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#note-input{
+    align-items:center;
+    display:flex;
+    justify-content: center;
 }
