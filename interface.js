@@ -1,13 +1,8 @@
 let notes = new Notes();
 
 function loadMessages() {
-  let contentDiv = document.getElementById('app');
   index = location.hash.substr(1);
-
-  content = notes.messages[index];
-
-  contentDiv.innerHTML = content;
-
+  getEmojis(notes.messages[index], 'app');
 }
 
 function createNewNote() {
@@ -19,6 +14,24 @@ function createNewNote() {
   noteInput.value = '';
 }
 
+function getEmojis(body, id) {
+  fetch('https://makers-emojify.herokuapp.com/', {
+    method: 'POST',
+    body: JSON.stringify({ text: body }),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then(
+      function (response) {
+        response.json().then(function (data) {
+          console.log(data);
+          document.getElementById(id).innerHTML = data.emojified_text;
+        });
+      }
+    );
+}
+
 function updateDisplayedMessages() {
   loadMessages();
   document.getElementById('note-list').innerHTML = '';
@@ -27,7 +40,7 @@ function updateDisplayedMessages() {
     let listItem = document.createElement('li');
     listLink.href = '#' + index;
     listLink.id = 'note' + index;
-    listLink.text = note.substring(0, 20);
+    getEmojis(note.substring(0, 20), listLink.id); // listLink.text =
     listItem.appendChild(listLink);
     document.getElementById('note-list').appendChild(listItem);
   });
