@@ -32,6 +32,24 @@ function getEmojis(body, id) {
     );
 }
 
+function getEmojisInArray(body, id) {
+  fetch('https://makers-emojify.herokuapp.com/', {
+    method: 'POST',
+    body: JSON.stringify({ text: body }),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then(
+      function (response) {
+        response.json().then(function (data) {
+          console.log(data);
+          document.getElementById(id).innerHTML = data.emojified_text;
+        });
+      }
+    );
+}
+
 function updateDisplayedMessages() {
   loadMessages();
   document.getElementById('note-list').innerHTML = '';
