@@ -1,56 +1,68 @@
-*{
-
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-image: linear-gradient(120deg,#45afaa,#f4f6d3e7);
-    color: rgb(230, 126, 94);
-    font-family: 'Poppins bold', sans-serif;
-    min-height: 100vh;
+body {
+  background-image: linear-gradient(120deg, #45afaa, #f4f6d3e7);
+  color: rgb(230, 126, 94);
+  font-family: "Poppins bold", sans-serif;
+  min-height: 100vh;
+  padding-left: 15cm;
 }
 
-header{
-    min-height: 20vh;
-    font-size: 1.5rem;
-    font-weight: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header {
+  min-height: 20vh;
+  font-size: 1.5rem;
+  font-weight: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 17cm;
 }
 
 .note-input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 17cm;
 }
 
 .create-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  padding-right: 17cm;
 }
 
-#create-note{
-    padding: 0.75rem;
-    font-size: 16px;
-    border-radius: 50px;
-    color: rgb(230, 126, 94);
-    border: 2px solid rgb(230, 126, 94);
-    cursor: pointer;
-    transition-duration: 0.4s;
+#create-note {
+  padding: 0.75rem;
+  font-size: 16px;
+  border-radius: 50px;
+  color: rgb(230, 126, 94);
+  border: 2px solid rgb(230, 126, 94);
+  cursor: pointer;
+  transition-duration: 0.4s;
 }
 
-a#note0{
-    justify-content: center;
-    align-items:center;
+a#note0 {
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
-#note-input{
-    align-items:center;
-    display:flex;
-    justify-content: center;
+#note-input {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#app {
+  justify-content: center;
+  align-items: center;
+  padding: 0.5cm;
+  display: flex;
+  padding-right: 10cm;
 }
