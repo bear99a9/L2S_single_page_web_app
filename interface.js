@@ -1,8 +1,8 @@
 let notes = new Notes();
 
 function loadMessages() {
-  var contentDiv = document.getElementById('app'),
-   index = location.hash.substr(1);
+  let contentDiv = document.getElementById('app');
+  index = location.hash.substr(1);
 
   content = notes.messages[index];
 

@@ -1,7 +1,7 @@
 class Notes {
 
   constructor() {
-    this.messages = [];
+    this.messages = ['Welcome to my App'];
   }
 
   all() {
